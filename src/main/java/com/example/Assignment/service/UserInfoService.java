@@ -1,7 +1,7 @@
 package com.example.Assignment.service;
 
-import com.ey.springboot3security.entity.UserInfo;
-import com.ey.springboot3security.repository.UserInfoRepository;
+import com.example.Assignment.Entity.UserInfo;
+import com.example.Assignment.repository.UserInfoRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
@@ -25,7 +25,7 @@ public class UserInfoService implements UserDetailsService {
 
         Optional<UserInfo> userDetail = repository.findByName(username);
 
-        // Converting userDetail to UserDetails
+
         return userDetail.map(UserInfoDetails::new)
                 .orElseThrow(() -> new UsernameNotFoundException("User not found " + username));
     }

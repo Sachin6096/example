@@ -1,6 +1,6 @@
 package com.example.Assignment.service;
 
-import com.ey.springboot3security.entity.UserInfo;
+import com.example.Assignment.Entity.UserInfo;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;

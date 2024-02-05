@@ -1,9 +1,9 @@
 package com.example.Assignment.controller;
 
-import com.ey.springboot3security.entity.AuthRequest;
-import com.ey.springboot3security.entity.UserInfo;
-import com.ey.springboot3security.service.JwtService;
-import com.ey.springboot3security.service.UserInfoService;
+import com.example.Assignment.Entity.AuthRequest;
+import com.example.Assignment.Entity.UserInfo;
+import com.example.Assignment.service.JwtService;
+import com.example.Assignment.service.UserInfoService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.security.authentication.AuthenticationManager;
@@ -32,6 +32,7 @@ public class UserController {
 
     @PostMapping("/addNewUser")
     public String addNewUser(@RequestBody UserInfo userInfo) {
+
         return service.addUser(userInfo);
     }
 

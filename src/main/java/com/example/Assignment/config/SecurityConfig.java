@@ -1,7 +1,7 @@
 package com.example.Assignment.config;
 
-import com.ey.springboot3security.filter.JwtAuthFilter;
-import com.ey.springboot3security.service.UserInfoService;
+import com.example.Assignment.filter.JwtAuthFilter;
+import com.example.Assignment.service.UserInfoService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
